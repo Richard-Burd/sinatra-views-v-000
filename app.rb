@@ -3,6 +3,9 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
 	get '/' do
-		"<h1>Hello Guyz</h1>"
+		erb :index
 	end
+
+  get '/info' do 
+    ""
 end
